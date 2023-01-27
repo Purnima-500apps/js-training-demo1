@@ -14,4 +14,4 @@ The some method would return true.
 Use the some method inside the checkPositive function to check if any element in arr is positive. The function should return a Boolean value.
 
 
-url: https://drive.500apps.com/7ac98cf4
+url: https://drive.500apps.com/99216eb2
