@@ -3,7 +3,7 @@ const globalArray = [5, 6, 3, 2, 9];
 function nonMutatingSort(arr) {
   // Only change code below this line
     let newArray = [...arr];
-    return newArray.sort(function(a,b) {
+    return newArray.sort((a,b) => {
       return a === b ? 0 : a > b ? 1 : -1;
     })
 

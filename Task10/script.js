@@ -127,5 +127,5 @@ const filteredList = watchList.filter(item => parseFloat(item["imdbRating"]) >= 
 
 
 function getOutput() {
-  document.getElementById("output").textContent = filteredList;
+  document.getElementById("output").textContent = JSON.stringify(filteredList);
 }

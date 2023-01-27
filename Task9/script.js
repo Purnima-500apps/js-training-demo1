@@ -1,5 +1,3 @@
-// The global variable
-// The global variable
 const watchList = [
   {
     "Title": "Inception",
@@ -51,6 +49,8 @@ const watchList = [
     "Rated": "PG-13",
     "Released": "18 Jul 2008",
     "Runtime": "152 min",
+
+
     "Genre": "Action, Adventure, Crime",
     "Director": "Christopher Nolan",
     "Writer": "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
@@ -87,10 +87,7 @@ const watchList = [
     "imdbVotes": "972,584",
     "imdbID": "tt0372784",
     "Type": "movie",
-    "Response": "True"
-  },
-  {
-    "Title": "Avatar",
+    "Response": "True",
     "Year": "2009",
     "Rated": "PG-13",
     "Released": "18 Dec 2009",
@@ -127,5 +124,8 @@ const filteredList = watchList.filter(item => parseFloat(item["imdbRating"]) >= 
 
 
 function getOutput() {
-  document.getElementById("output").textContent = filteredList;
+  document.getElementById("output").textContent = JSON.stringify(filteredList);
+
+// Only change code above this line
+
 }
